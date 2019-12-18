@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/27216521-1b20-4ce1-884d-e7a910ffa863/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/iLumni-API",
+    "appService.deploySubpath": ""
+}

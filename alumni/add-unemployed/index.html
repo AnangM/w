@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin - Tables</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="../../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="../../css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+    <a class="navbar-brand mr-1" href="../../index.html">iLumni</a>
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navbar Search -->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for..." aria-label="Search"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Navbar -->
+
+
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../../">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../bidang-pekerjaan/">
+          <i class="fas fa-fw fa-briefcase"></i>
+          <span>Bidang Pekerjaan</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../bidang-usaha/">
+          <i class="fas fa-fw fa-wrench"></i>
+          <span>Bidang Usaha</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../dudi/">
+          <i class="fas fa-fw fa-building"></i>
+          <span>DU/DI</span>
+        </a>
+      </li>
+    </ul>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item active">Tambah Data Alumni</li>
+        </ol>
+
+
+
+
+        <!-- CONTENT -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-user"></i>
+            Tambahkan Data</div>
+          <div class="card-body">
+            <form class="form">
+              <label for="nama">Nama</label>
+              <input class="form-control" type="text" name="nama" id="nama">
+              <label for="nama">Nim</label>
+              <input class="form-control" type="text" name="nim" id="nim">
+              <label for="nama">Tempat Lahir</label>
+              <input class="form-control" type="text" name="tl" id="tl">
+              <label for="nama">Tanggal Lahir</label>
+              <input class="form-control" type="date" name="tgl" id="tgl">
+              <label for="nama">E-mail</label>
+              <input class="form-control" type="email" name="email" id="email">
+              <label for="nama">Password</label>
+              <input class="form-control" type="password" name="passwd" id="passwd">
+              <label for="nama">Konfirmasi Password</label>
+              <input class="form-control" type="password" name="c_passwd" id="c_passwd">
+              <label for="nama">Fakultas</label>
+              <select class="form-control" name="fak" id="fak">
+                <option class="opt">------Please Select------</option>
+              </select>
+              <label for="nama">Jurusan</label>
+              <select class="form-control" name="jur" id="jur">
+                <option class="opt">------Please Select------</option>
+              </select>
+              <label for="nama">Prodi</label>
+              <select class="form-control" name="jur" id="prod">
+                <option class="opt">------Please Select------</option>
+              </select>
+              <label for="nama">Tahun Lulus</label>
+              <input class="form-control" type="number" name="tahun" id="tahun">
+              <div class="text-right">
+                <button type="submit" class="btn btn-primary" style="margin-top: 1em;">Tambah Data</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Tambah Data</div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+  <!-- /.container-fluid -->
+
+  <!-- Sticky Footer -->
+  <footer class="sticky-footer">
+    <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+        <span>Copyright © iLumni 2019</span>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+  <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="../../login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="../../vendor/datatables/jquery.dataTables.js"></script>
+  <script src="../../vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../../js/sb-admin.min.js"></script>
+
+  <script>
+    $(document).ready(async function () {
+      await fetch('http://localhost:8000/fakultas', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ institusi: 1 })
+      }).then((resp) => resp.json())
+        .then(function (resp) {
+          $('#fak').empty();
+          for (var k = 0; k < resp.data.length; k++) {
+            $('#fak').append(`<option class="opt" val='${resp.data[k].id}'>${resp.data[k].fakultas}</option>`)
+          }
+        }).catch(function (err) {
+          console.log(err);
+        });
+    });
+    $('#fak').change(async function () {
+      var fak_id = $('#fak').find("option:selected");
+      await fetch('http://localhost:8000/jurusan/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ fakultas: fak_id.attr('val') })
+      }).then((resp) => resp.json())
+        .then(function (resp) {
+          $('#jur').empty();
+          for (var k = 0; k < resp.data.length; k++) {
+            $('#jur').append(`<option class="opt" val='${resp.data[k].id}'>${resp.data[k].jurusan}</option>`)
+          }
+        }).catch(function (err) {
+          console.log(err);
+        })
+    });
+
+    $('#jur').change(async function () {
+      var jur_id = $('#jur').find("option:selected");
+      console.log(jur_id.attr('val'))
+      await fetch('http://localhost:8000/prodi/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ jurusan: jur_id.attr('val') })
+      }).then((resp) => resp.json())
+        .then(function (resp) {
+          $('#prod').empty();
+          for (var k = 0; k < resp.data.length; k++) {
+            $('#prod').append(`<option class="opt" val='${resp.data[k].id}'>${resp.data[k].prodi}</option>`)
+          }
+        }).catch(function (err) {
+          console.log(err);
+        })
+    });
+
+
+    function addData() {
+      var data = {
+        nama: 'required',
+        tempat_lahir: 'required',
+        tanggal_lahir: 'required',
+        alamat: 'required',
+        email: 'required|email',
+        password: 'required|same:confirm_password',
+        no_telp: 'required',
+        nim: 'required',
+        fakultas: 'required',
+        jurusan: 'required',
+        prodi: 'required',
+        tahun_masuk: 'required',
+        tahun_lulus: 'required',
+        bidang_id: 'required',
+        dudi_id: 'required'
+      }
+    }
+  </script>
+
+</body>
+
+</html>
